@@ -1,5 +1,0 @@
-import urllib2, json
-url = "https://services1.arcgis.com/LsoiDXzijohT7g97/arcgis/rest/services/COVID19ChileAcciones/FeatureServer/1/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=CuarentenaID%2CNombre%2CEstado%2CAlcance%2CFInicio%2CFTermino%2CCut_Com%2CDetalle%2CShape__Length%2CShape__Area&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=4326&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pgeojson"
-response = urllib2.urlopen(url)
-data = json.loads(response.read())
-print(data)

@@ -6,8 +6,8 @@ name: Actualiza_Cuarentenas_CSV
 # events but only for the master branch
 on:
     push:
-        branches: master
-        paths: 'output/*.csv'
+        branches: [master]
+        paths: ['output/*.csv']
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

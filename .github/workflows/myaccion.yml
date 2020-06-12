@@ -1,13 +1,13 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Actualiza_Cuarentenas_CSV
+name: Actualiza_Cuarentenas_CSV_2
 
 # Controls when the action will run. Triggers the workflow on push or pull request 
 # events but only for the master branch
 on:
     push:
-        branches: master
-        paths: 'output/*.csv'
+        branches: [master]
+        paths: ['output/*.csv']
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -44,12 +44,6 @@ jobs:
           committer: leandermen github bot <actions@github.com>
           reviewers: Leandermen
           base: master
-
-    # - name: update_API
-    #   run: |
-    #     curl -u "${{ secrets.DO_INT_USER }}:${{ secrets.DO_INT_PASS }}" \
-    #     -H 'Accept: application/vnd.github.everest-preview+json'  "https://api.github.com/repos/Data-Observatory/covid19-API/dispatches" \
-    #     -d '{"event_type": "update_please_from_informe_epidemiologico"}'
 
 
 
